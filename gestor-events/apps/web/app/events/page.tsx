@@ -7,14 +7,20 @@ import EventCard from "../components/EventCard";
 export default function Events() {
   const [eventos, setEventos] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState();
 
   useEffect(() => {
     async function conectar() {
-      setLoading(true);
-      const res = await fetch("http://localhost:3001/api/events");
-      const data = await res.json();
-      setEventos(data);
-      setLoading(false);
+      try {
+        setLoading(true);
+        const res = await fetch("http://localhost:3001/api/events");
+        if (!res.ok) throw new Error("Error al cargar los datos");
+        const data = await res.json();
+        setEventos(data);
+        setLoading(false);
+      } catch (error) {
+        setError("No se pudieron cargar los eventos");
+      }
     }
 
     conectar();
