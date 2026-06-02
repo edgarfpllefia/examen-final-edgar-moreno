@@ -32,8 +32,8 @@
 | [ ] | C5 — Dades en memòria                   | 0,2              |
 | [ ] | C6 — Logger (mètode + ruta)             | 0,3              |
 | [ ] | C7 — Errors en JSON                     | 0,3              |
-| [ ] | C8 — Detall amb `nom`, `data`, `ciutat` | 0,1              |
-| [ ] | C9 — API arrenca en local               | 0,2              |
+| [X] | C8 — Detall amb `nom`, `data`, `ciutat` | 0,1              |
+| [X] | C9 — API arrenca en local               | 0,2              |
 | [ ] | C10 — Codis HTTP coherents              | 0,2              |
 |     | **Subtotal C**                          | **\_\_\_ / 3,0** |
 
@@ -41,7 +41,7 @@
 
 |     | Criteri                          | Punts            |
 | --- | -------------------------------- | ---------------- |
-| [ ] | D1 — `fetch` a `GET /api/events` | 0,3              |
+| []  | D1 — `fetch` a `GET /api/events` | 0,3              |
 | [ ] | D2 — `loading`                   | 0,2              |
 | [ ] | D3 — Missatge d'error            | 0,2              |
 | [ ] | D4 — Llista des de l'API         | 0,2              |
@@ -51,11 +51,11 @@
 ### E. README i PR — màx. 1,0
 
 |     | Criteri                                          | Punts            |
-| --- | ------------------------------------------------ | ---------------- |
-| [ ] | E1 — README **només** aquest checklist (res més) | 0,3              |
+| --- | ------------------------------------------------ | ---------------- | ------------------------------------------------ |
+| [X] | E1 — README **només** aquest checklist (res més) | 0,3              |
 | [ ] | E2 — Checklist B, C, D complet                   | 0,2              |
-| [ ] | E3 — Els `[x]` coincideixen amb el codi          | 0,2              |
-| [ ] | E4 — PR B mergeada (enllaç a dalt)               | 0,1              |
+| [X] | E3 — Els `[x]` coincideixen amb el codi          | 0,2              |
+| [X] | E4 — PR B mergeada (enllaç a dalt)               | 0,1              | Estaba mergeada, tuve problemas con el commit... |
 | [ ] | E5 — PR C mergeada (enllaç a dalt)               | 0,1              |
 | [ ] | E6 — PR D mergeada (enllaç a dalt)               | 0,1              |
 |     | **Subtotal E**                                   | **\_\_\_ / 1,0** |

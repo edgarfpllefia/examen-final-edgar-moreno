@@ -1,3 +1,5 @@
+"use client";
+
 // import eventos from "../data/eventos";
 import { useEffect, useState } from "react";
 import EventCard from "../components/EventCard";
@@ -7,7 +9,7 @@ export default function Events() {
 
   useEffect(() => {
     async function conectar() {
-      const res = await fetch("/api/events");
+      const res = await fetch("http://localhost:3001/api/events");
       const data = await res.json();
       setEventos(data);
     }
